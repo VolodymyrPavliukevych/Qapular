@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="7La-Ix-xad">
+            <objects>
+                <windowController storyboardIdentifier="QCCWindowController" id="YA3-nQ-POq" customClass="QCCWindowController" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="PgR-Ox-mwb" customClass="QCCWindow">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <value key="minSize" type="size" width="480" height="270"/>
+                    </window>
+                    <connections>
+                        <segue destination="B0o-gc-jPG" kind="relationship" relationship="window.shadowedContentViewController" id="7jh-KW-C6g"/>
+                    </connections>
+                </windowController>
+                <customObject id="uRw-57-Xra" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="221"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="5ao-KJ-3rB">
+            <objects>
+                <viewController storyboardIdentifier="QCCodeViewController" id="B0o-gc-jPG" customClass="QCCodeViewController" sceneMemberID="viewController">
+                    <view key="view" id="tUj-Fv-z7v" customClass="QCCRootView">
+                        <rect key="frame" x="0.0" y="0.0" width="622" height="450"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="tp1-MU-jbZ" customClass="QCCWindowTitleBar">
+                                <rect key="frame" x="0.0" y="411" width="622" height="39"/>
+                                <subviews>
+                                    <button identifier="redButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGr-KV-B5f" userLabel="redButton" customClass="QCCWindowButton">
+                                        <rect key="frame" x="10" y="10" width="19" height="19"/>
+                                        <buttonCell key="cell" type="roundRect" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oyg-wd-AIZ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="cellTitle"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="windowButtonAction:" target="tp1-MU-jbZ" id="csN-Pa-s15"/>
+                                        </connections>
+                                    </button>
+                                    <button identifier="yellowButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjo-hH-Ywo" userLabel="yellowButton" customClass="QCCWindowButton">
+                                        <rect key="frame" x="30" y="10" width="19" height="19"/>
+                                        <buttonCell key="cell" type="roundRect" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="R70-bC-1OH">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="cellTitle"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="windowButtonAction:" target="tp1-MU-jbZ" id="Pu2-D2-bTd"/>
+                                        </connections>
+                                    </button>
+                                    <button identifier="greenButton" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yon-0i-pFk" userLabel="greenButton" customClass="QCCWindowButton">
+                                        <rect key="frame" x="50" y="10" width="19" height="19"/>
+                                        <buttonCell key="cell" type="roundRect" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PCf-Em-UTJ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="cellTitle"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="windowButtonAction:" target="tp1-MU-jbZ" id="Tit-6r-FVs"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z9I-gN-cva">
+                                        <rect key="frame" x="275" y="8" width="72" height="22"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Document" id="Ctm-WB-JxF">
+                                            <font key="font" metaFont="titleBar"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Z9I-gN-cva" firstAttribute="leading" secondItem="tp1-MU-jbZ" secondAttribute="leading" constant="277" id="8OT-S9-bv9"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z9I-gN-cva" secondAttribute="bottom" constant="8" id="IYq-0Y-Gav"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z9I-gN-cva" secondAttribute="trailing" constant="277" id="Y3R-d1-y8N"/>
+                                    <constraint firstItem="Z9I-gN-cva" firstAttribute="top" secondItem="tp1-MU-jbZ" secondAttribute="top" constant="9" id="o7h-x2-iJi"/>
+                                    <constraint firstAttribute="height" constant="39" id="pWl-lM-rI9"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="_titleLabel" destination="Z9I-gN-cva" id="u5q-G8-srA"/>
+                                    <outlet property="_windowCloseButton" destination="CGr-KV-B5f" id="AqG-dT-iRK"/>
+                                    <outlet property="_windowFullScreenButton" destination="Yon-0i-pFk" id="KCv-9q-Hkt"/>
+                                    <outlet property="_windowMiniaturizeButton" destination="cjo-hH-Ywo" id="zIf-SP-nep"/>
+                                </connections>
+                            </customView>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHh-uh-dYL">
+                                <rect key="frame" x="0.0" y="23" width="622" height="388"/>
+                                <clipView key="contentView" copiesOnScroll="NO" id="4u4-fT-W6j">
+                                    <rect key="frame" x="1" y="1" width="223" height="133"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" findStyle="bar" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" dashSubstitution="YES" smartInsertDelete="YES" id="wC2-wM-dsf" customClass="QCCodeView" colorLabel="IBBuiltInLabel-Red">
+                                            <rect key="frame" x="0.0" y="0.0" width="223" height="398"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="622" height="388"/>
+                                            <size key="maxSize" width="750" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="622" height="388"/>
+                                            <size key="maxSize" width="750" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="xtL-OG-L2s">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="CpD-aF-hVR">
+                                    <rect key="frame" x="224" y="1" width="15" height="133"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Csm-AN-NPE" userLabel="StatusBarView" customClass="QCCStatusBar">
+                                <rect key="frame" x="0.0" y="0.0" width="622" height="23"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Csm-AN-NPE" firstAttribute="top" secondItem="tHh-uh-dYL" secondAttribute="bottom" id="INd-cO-Z1e"/>
+                            <constraint firstItem="tHh-uh-dYL" firstAttribute="leading" secondItem="tUj-Fv-z7v" secondAttribute="leading" id="Ori-zf-DUg"/>
+                            <constraint firstItem="tp1-MU-jbZ" firstAttribute="leading" secondItem="tUj-Fv-z7v" secondAttribute="leading" id="TQj-uP-fK5"/>
+                            <constraint firstItem="tHh-uh-dYL" firstAttribute="top" secondItem="tp1-MU-jbZ" secondAttribute="bottom" id="UJQ-Vy-2t2"/>
+                            <constraint firstAttribute="bottom" secondItem="tHh-uh-dYL" secondAttribute="bottom" constant="23" id="baY-Yw-SrN"/>
+                            <constraint firstAttribute="trailing" secondItem="Csm-AN-NPE" secondAttribute="trailing" id="dyc-JH-nou"/>
+                            <constraint firstAttribute="bottom" secondItem="Csm-AN-NPE" secondAttribute="bottom" id="lVQ-c2-4lA"/>
+                            <constraint firstAttribute="trailing" secondItem="tHh-uh-dYL" secondAttribute="trailing" id="oYf-qW-9lE"/>
+                            <constraint firstAttribute="trailing" secondItem="tp1-MU-jbZ" secondAttribute="trailing" id="tV1-63-PjF"/>
+                            <constraint firstItem="Csm-AN-NPE" firstAttribute="leading" secondItem="tUj-Fv-z7v" secondAttribute="leading" id="tV5-s6-ght"/>
+                            <constraint firstItem="tp1-MU-jbZ" firstAttribute="top" secondItem="tUj-Fv-z7v" secondAttribute="top" id="z2d-LF-efy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_codeView" destination="wC2-wM-dsf" id="A9B-Aj-uyK"/>
+                        <outlet property="_editorScrollView" destination="tHh-uh-dYL" id="O6p-34-6CW"/>
+                        <outlet property="_rootView" destination="tUj-Fv-z7v" id="Yt4-9T-22j"/>
+                        <outlet property="_statusBar" destination="Csm-AN-NPE" id="OW9-rT-4KL"/>
+                        <outlet property="_titleBar" destination="tp1-MU-jbZ" id="YK5-Kj-Ki1"/>
+                    </connections>
+                </viewController>
+                <customObject id="uJT-Kv-yd9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="803"/>
+        </scene>
+    </scenes>
+</document>

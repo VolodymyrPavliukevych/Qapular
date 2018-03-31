@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>SectionItems</key>
+		<array>
+			<dict>
+				<key>SourceHeaderTypeKey</key>
+				<string>public.c-header</string>
+				<key>SourceIconKey</key>
+				<string>c-plus-plus-source_Icon.icns</string>
+				<key>SourceContentKey</key>
+				<data>Ly8KLy8gRW1wdHkgYysrIGZpbGUKLy8gCg==</data>
+				<key>SourceFileTypeKey</key>
+				<string>public.c-plus-plus-source</string>
+				<key>SourceTitleKey</key>
+				<string>C ++ file</string>
+				<key>SourceDescriptionKey</key>
+				<string>An empty C ++ file.</string>
+			</dict>
+			<dict>
+				<key>SourceHeaderTypeKey</key>
+				<string>public.c-header</string>
+				<key>SourceIconKey</key>
+				<string>c-header_Icon.icns</string>
+				<key>SourceContentKey</key>
+				<data>Ly8KLy8gRW1wdHkgYyBmaWxlCi8vIAo=</data>
+				<key>SourceFileTypeKey</key>
+				<string>public.c-source</string>
+				<key>SourceTitleKey</key>
+				<string>C source file</string>
+				<key>SourceDescriptionKey</key>
+				<string>An empty C file.</string>
+			</dict>
+			<dict>
+				<key>SourceIconKey</key>
+				<string>c-source_Icon.icns</string>
+				<key>SourceContentKey</key>
+				<data>Ly8KLy8gRW1wdHkgaGVhZGVyIGZpbGUKLy8gCg==</data>
+				<key>SourceFileTypeKey</key>
+				<string>public.c-header</string>
+				<key>SourceTitleKey</key>
+				<string>Header file</string>
+				<key>SourceDescriptionKey</key>
+				<string>An empty header file.</string>
+			</dict>
+		</array>
+		<key>SectionDescription</key>
+		<string>C family</string>
+		<key>SectionIcon</key>
+		<string>c-source_Icon.icns</string>
+		<key>SectionName</key>
+		<string>C family source files.</string>
+	</dict>
+</array>
+</plist>

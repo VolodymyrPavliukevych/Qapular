@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="QCCPreferencesViewController">
+            <connections>
+                <outlet property="_showLineNumberCheckBox" destination="Ivs-NK-Ley" id="btj-dg-tHn"/>
+                <outlet property="_themeNameComboBox" destination="QWJ-cp-czV" id="hYj-ZK-LjY"/>
+                <outlet property="_unSavedComboBox" destination="2jY-aV-O66" id="Q1S-sT-Qr7"/>
+                <outlet property="_wrapColumnAtFrameCheckBox" destination="FA4-X7-vCM" id="55V-a1-8IN"/>
+                <outlet property="_wrapColumnCheckBox" destination="DYp-dd-ndv" id="pGC-io-OsP"/>
+                <outlet property="_wrapColumnStepper" destination="zoA-Gz-yDa" id="oRx-Ku-JkS"/>
+                <outlet property="_wrapColumnTextField" destination="J2X-KX-4DY" id="HIb-Ou-NUg"/>
+                <outlet property="view" destination="BR4-g0-A2T" id="drH-nI-MkG"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="BR4-g0-A2T">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5k-es-WYR">
+                    <rect key="frame" x="36" y="76" width="163" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Store unsaved document:" id="dL3-bb-lc1">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hUe-Xn-fB0" userLabel="Line numbers Labels">
+                    <rect key="frame" x="156" y="168" width="43" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Show:" id="wzD-5q-Jgq">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ivs-NK-Ley" userLabel="Line numbers Checkbox">
+                    <rect key="frame" x="203" y="167" width="259" height="18"/>
+                    <buttonCell key="cell" type="check" title="Line numbers" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Vhu-1V-igR">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="showLineNumberCheckBox:" target="-2" id="0Ol-JS-FXI"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2X-KX-4DY">
+                    <rect key="frame" x="363" y="146" width="50" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Gy9-yK-PLj">
+                        <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="9cJ-ib-EWk"/>
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DYp-dd-ndv" userLabel="Line Number Label">
+                    <rect key="frame" x="203" y="147" width="154" height="18"/>
+                    <buttonCell key="cell" type="check" title="Wrap code at column" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="3Hq-2G-JNW">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="shouldWrapColumn:" target="-2" id="rET-MI-pWw"/>
+                    </connections>
+                </button>
+                <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zoA-Gz-yDa" userLabel="Line number Stepper">
+                    <rect key="frame" x="418" y="143" width="19" height="27"/>
+                    <stepperCell key="cell" continuous="YES" alignment="left" increment="5" maxValue="500" doubleValue="5" id="NNR-kX-n1d"/>
+                    <connections>
+                        <action selector="wrapColumnValueChanged:" target="-2" id="IQI-De-lLX"/>
+                    </connections>
+                </stepper>
+                <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QWJ-cp-czV" userLabel="Theme Combo Box">
+                    <rect key="frame" x="205" y="101" width="238" height="26"/>
+                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" numberOfVisibleItems="10" id="HRy-5G-neV">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </comboBoxCell>
+                    <connections>
+                        <action selector="themeNameSelected:" target="-2" id="TUT-ic-OqD"/>
+                    </connections>
+                </comboBox>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FA4-X7-vCM">
+                    <rect key="frame" x="203" y="127" width="142" height="18"/>
+                    <buttonCell key="cell" type="check" title="Or use window size" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Qie-0l-39w">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="userWindowFrameForWrapingCode:" target="-2" id="mbd-Gh-e1P"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHu-lS-HKX" userLabel="Theme Label">
+                    <rect key="frame" x="149" y="107" width="50" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Theme:" id="Uoh-NH-ozH">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jY-aV-O66" userLabel="UnSaved folder">
+                    <rect key="frame" x="205" y="70" width="238" height="26"/>
+                    <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="3" id="7Uz-bb-fUO">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </comboBoxCell>
+                    <connections>
+                        <action selector="unSavedDocumentFolder:" target="-2" id="DK3-8K-Rvi"/>
+                    </connections>
+                </comboBox>
+            </subviews>
+        </view>
+    </objects>
+</document>

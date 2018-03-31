@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DeploymentConfiguration</key>
+	<dict>
+		<key>QCCBaseConfigurationElementChildren</key>
+		<array>
+			<dict>
+				<key>QCCBaseConfigurationElementType</key>
+				<string>QCCDeploymentConfigurationContainer</string>
+				<key>QCCBaseConfigurationElementName</key>
+				<string>Default deployment configuration</string>
+                <key>QCCBaseConfigurationElementChildren</key>
+                <array>
+                    <dict>
+                        <key>QCCBaseConfigurationElementChildren</key>
+                        <array/>
+                        <key>QCCBaseConfigurationElementName</key>
+                        <string>Arduino UNO</string>
+                        <key>QCCBaseConfigurationElementType</key>
+                        <string>QCCBoardConfigurationContainer</string>
+                        <key>QCCBoardConfigurationIdentifier</key>
+                        <string>D9F5B08A-664D-4974-A103-AD64F5BD6855</string>
+                    </dict>
+                </array>
+            </dict>
+		</array>
+		<key>QCCBaseConfigurationElementName</key>
+		<string>Project setting</string>
+		<key>QCCBaseConfigurationElementType</key>
+		<string>QCCProjectConfigurationContainer</string>
+	</dict>
+	<key>SourceConfigurationKey</key>
+	<dict>
+		<key>SourceGroupKey</key>
+		<dict>
+			<key>F688C253-8B3E-4A85-A2B3-78471AFF740D</key>
+			<dict>
+				<key>SourcePathKey</key>
+				<string>sources</string>
+				<key>SourceParentKey</key>
+				<string>FCF2B7CC-D59E-4F56-A24D-87119BEDB27F</string>
+			</dict>
+			<key>FCF2B7CC-D59E-4F56-A24D-87119BEDB27F</key>
+			<dict>
+				<key>SourcePathKey</key>
+				<string></string>
+				<key>SourceRootFileKey</key>
+				<true/>
+				<key>SourceVirtualFileKey</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>SourceFileKey</key>
+		<dict>
+			<key>4096DE2F-3634-4DF3-A132-98206726EAC5</key>
+			<dict>
+				<key>SourceFileTypeKey</key>
+				<string>public.c-plus-plus-source</string>
+				<key>SourcePathKey</key>
+				<string>sketch.cpp</string>
+				<key>SourceISAKey</key>
+				<string>QCCFamilyDocument</string>
+				<key>SourceContentKey</key>
+				<data>I2luY2x1ZGUgIkFyZHVpbm8uaCIKCnZvaWQgc2V0dXAoKTsKdm9pZCBsb29wKCk7Cgp2b2lkIHNldHVwKCkgewogICAgICBwaW5Nb2RlKDEzLCBPVVRQVVQpOwp9Cgp2b2lkIGxvb3AoKSB7CiAgICBkaWdpdGFsV3JpdGUoMTMsIEhJR0gpOyAgIC8vIHR1cm4gdGhlIExFRCBvbiAoSElHSCBpcyB0aGUgdm9sdGFnZSBsZXZlbCkKICAgIGRlbGF5KDEwMCk7ICAgICAgICAgICAgICAvLyB3YWl0IGZvciBhIHNlY29uZAogICAgZGlnaXRhbFdyaXRlKDEzLCBMT1cpOyAgICAvLyB0dXJuIHRoZSBMRUQgb2ZmIGJ5IG1ha2luZyB0aGUgdm9sdGFnZSBMT1cKICAgIGRlbGF5KDEwMCk7ICAgICAgICAgICAgICAvLyB3YWl0IGZvciBhIHNlY29uZCAgICAKfQ==</data>
+				<key>SourceParentKey</key>
+				<string>F688C253-8B3E-4A85-A2B3-78471AFF740D</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="QCCNewFileWindowController">
+            <connections>
+                <outlet property="_filePathTextField" destination="kzp-fn-ZWz" id="xpY-Dv-SiQ"/>
+                <outlet property="_filesCollectionView" destination="7ae-Ar-WW9" id="Ycu-Vg-saK"/>
+                <outlet property="_headerFileButton" destination="RV3-A5-8gX" id="VT2-C6-1jw"/>
+                <outlet property="_negativeButton" destination="mcP-pZ-xCW" id="Uwc-M5-0MD"/>
+                <outlet property="_newEssenceTitleTextField" destination="PFP-Xg-K0J" id="uHj-Fh-ejq"/>
+                <outlet property="_positiveButton" destination="DKO-0C-z59" id="bPz-Kk-lRt"/>
+                <outlet property="_resultEssenceNameTextField" destination="msj-Cn-VAa" id="glG-Ln-cFb"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="suK-Em-yXA"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="640" height="400"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="640" height="400"/>
+            <value key="maxSize" type="size" width="640" height="400"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="640" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ioe-5k-UD5" userLabel="TemplateViewControllerTitleLabel">
+                        <rect key="frame" x="18" y="363" width="604" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="fIn-3l-VLa"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Please, select any template for your new file:" id="pFu-gL-vth">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jng-sT-wGG">
+                        <rect key="frame" x="20" y="155" width="600" height="200"/>
+                        <clipView key="contentView" id="JhX-KD-q59">
+                            <rect key="frame" x="1" y="1" width="248" height="158"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <collectionView id="7ae-Ar-WW9" customClass="QCCTemplateCollectionView">
+                                    <rect key="frame" x="0.0" y="0.0" width="248" height="158"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <outlet property="itemPrototype" destination="brA-CL-Vxl" id="vOs-QF-n4A"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                        </clipView>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="3F8-dv-5nw"/>
+                        </constraints>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="JK7-BP-rZW">
+                            <rect key="frame" x="1" y="144" width="233" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="P22-bD-B7N">
+                            <rect key="frame" x="234" y="1" width="15" height="143"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PFP-Xg-K0J" userLabel="FileNameLabel">
+                        <rect key="frame" x="32" y="125" width="74" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="File name:" id="8Kp-vg-Pad">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="msj-Cn-VAa">
+                        <rect key="frame" x="112" y="125" width="508" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="pXy-w8-bpR">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <outlet property="delegate" destination="-2" id="MDY-Re-W1x"/>
+                        </connections>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RV3-A5-8gX" userLabel="HeaderCheckBox">
+                        <rect key="frame" x="110" y="93" width="512" height="26"/>
+                        <buttonCell key="cell" type="check" title="Also create a header file" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="OfE-eQ-Tr8">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DKO-0C-z59">
+                        <rect key="frame" x="523" y="13" width="103" height="32"/>
+                        <buttonCell key="cell" type="push" title="Create file" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wKi-pO-Z4B">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doneAction:" target="-2" id="nOE-5G-Xs5"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mcP-pZ-xCW">
+                        <rect key="frame" x="14" y="13" width="83" height="32"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="IhM-gF-kwL">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelAction:" target="-2" id="mfA-K0-Gyb"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="il7-cA-S8G" userLabel="FilePathLabel">
+                        <rect key="frame" x="32" y="70" width="74" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="File path:" id="8GJ-uK-bwE">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzp-fn-ZWz" userLabel="FilePath">
+                        <rect key="frame" x="110" y="70" width="510" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="../" id="4cb-Vo-fp0">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Jng-sT-wGG" secondAttribute="trailing" constant="20" id="1To-9N-4KN"/>
+                    <constraint firstItem="Jng-sT-wGG" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="TxF-eZ-vdM"/>
+                    <constraint firstItem="ioe-5k-UD5" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="Y47-jX-cXg"/>
+                    <constraint firstItem="ioe-5k-UD5" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="h6f-kk-hIp"/>
+                    <constraint firstAttribute="trailing" secondItem="ioe-5k-UD5" secondAttribute="trailing" constant="20" id="tkv-V9-P7x"/>
+                    <constraint firstItem="Jng-sT-wGG" firstAttribute="top" secondItem="ioe-5k-UD5" secondAttribute="bottom" constant="8" id="u8F-Bp-xKO"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="vSI-wn-W4q"/>
+            </connections>
+        </window>
+        <collectionViewItem nibName="QCCTemplateFileViewItem" id="brA-CL-Vxl" customClass="QCCTemplateFileViewItem"/>
+    </objects>
+</document>

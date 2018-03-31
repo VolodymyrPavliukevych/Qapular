@@ -1,0 +1,16 @@
+https://developer.apple.com/library/mac/documentation/Security/Conceptual/CodeSigningGuide/Procedures/Procedures.html
+
+// Find all executable files
+find . -perm +0111 -type f
+
+// Sign
+/usr/bin/codesign --force --sign 911BC05900D35A04DBF12B22D9B3D60E37545E80 --entitlements /Users/Roaming/Projects/Qapular/IDEKit/Qapular/Qapular/Qapular.entitlements --requirements=/Users/Roaming/Projects/Qapular/IDEKit/distribution/qapularPackageSign.rqset --timestamp=none ./avr-gcc
+
+// Test
+codesign --verbose -dvvv --entitlements :- ./avr-gcc
+
+spctl --assess --type execute --verbose ./avr-gcc
+
+
+com.apple.security.app-sandbox
+com.apple.security.inherit

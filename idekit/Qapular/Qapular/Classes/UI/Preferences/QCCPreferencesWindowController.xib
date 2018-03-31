@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="QCCPreferencesWindowController">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="200"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <value key="minSize" type="size" width="480" height="200"/>
+            <value key="maxSize" type="size" width="800" height="800"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tabView drawsBackground="NO" allowsTruncatedLabels="NO" type="noTabsBezelBorder" translatesAutoresizingMaskIntoConstraints="NO" id="SYP-G0-Gw4" customClass="QCCPreferencesTabView">
+                        <rect key="frame" x="-4" y="-4" width="488" height="206"/>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems/>
+                        <connections>
+                            <outlet property="dataSource" destination="-2" id="Yu8-UJ-zbU"/>
+                            <outlet property="delegate" destination="-2" id="zrq-a6-8YG"/>
+                        </connections>
+                    </tabView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SYP-G0-Gw4" secondAttribute="bottom" id="2BS-G1-rLz"/>
+                    <constraint firstItem="SYP-G0-Gw4" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="Npt-oV-im8"/>
+                    <constraint firstAttribute="trailing" secondItem="SYP-G0-Gw4" secondAttribute="trailing" id="ift-vA-BiU"/>
+                    <constraint firstItem="SYP-G0-Gw4" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="uXb-lX-f12"/>
+                </constraints>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="702EE4F1-0167-4A22-A000-50E9343F8585" explicitIdentifier="QCCPreferencesToolBar" displayMode="iconAndLabel" sizeMode="regular" id="ZPE-49-eFD">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="69BB36C3-3840-4CCF-AF98-D7E5F1A89E9D" explicitItemIdentifier="QCCPreferencesTabViewItemGeneral" label="General" paletteLabel="General" image="toolbar_general" selectable="YES" id="5sL-6A-6h5">
+                        <connections>
+                            <action selector="selectToolBarItem:" target="-2" id="dJd-DM-u6U"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="17EA2DBD-C5EA-4208-9DFC-1DD9DE7F5A6F" explicitItemIdentifier="QCCPreferencesTabViewItemLibrary" label="Library" paletteLabel="Library" tag="1" image="toolbar_library" selectable="YES" id="yD2-bh-atZ">
+                        <connections>
+                            <action selector="selectToolBarItem:" target="-2" id="sJ9-7e-SVM"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="LIC-zA-kUo"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="JNt-ee-kxI"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="JNt-ee-kxI"/>
+                    <toolbarItem reference="5sL-6A-6h5"/>
+                    <toolbarItem reference="yD2-bh-atZ"/>
+                    <toolbarItem reference="JNt-ee-kxI"/>
+                </defaultToolbarItems>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="string" keyPath="selectedItemIdentifier" value="QCCPreferencesTabViewItemGeneral"/>
+                </userDefinedRuntimeAttributes>
+                <connections>
+                    <outlet property="delegate" destination="-2" id="rhh-ux-yiu"/>
+                </connections>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+        </window>
+    </objects>
+    <resources>
+        <image name="toolbar_general" width="32" height="32"/>
+        <image name="toolbar_library" width="32" height="32"/>
+    </resources>
+</document>

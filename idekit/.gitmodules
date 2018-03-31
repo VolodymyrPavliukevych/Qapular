@@ -1,0 +1,3 @@
+[submodule "Qapular/Qapular/Resources/Packages"]
+	path = Qapular/Qapular/Resources/Packages
+	url = git@git.qapular.com:Qapular/Packages.git
