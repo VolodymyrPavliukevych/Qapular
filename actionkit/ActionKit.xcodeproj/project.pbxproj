@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD7D58921C692ACC00EC616E /* QCCPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D58911C692ACC00EC616E /* QCCPhase.swift */; };
+		CDA483641C7390EF00486CF5 /* build.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDA483631C7390EF00486CF5 /* build.bundle */; };
+		CDA483661C73941000486CF5 /* QCCProjectEssenceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFCF7571C5E75CB00881094 /* QCCProjectEssenceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDA483671C73941000486CF5 /* QCCTaskManagerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFCF7581C5E75CB00881094 /* QCCTaskManagerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDBD895F1C5F51A900425C9B /* QCCEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD895E1C5F51A900425C9B /* QCCEnvironment.swift */; };
+		CDBD89621C5F553900425C9B /* QCCAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD89611C5F553900425C9B /* QCCAction.swift */; };
+		CDD7C6B51CC4E7DF009F27BF /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD7C6B41CC4E7DF009F27BF /* Error.swift */; };
+		CDE388101CCBEE9E00ED5107 /* QCCActionReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE3880F1CCBEE9E00ED5107 /* QCCActionReport.swift */; };
+		CDF4ECE91C5FF404006CA56D /* ActionKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF4ECE81C5FF404006CA56D /* ActionKitTests.m */; };
+		CDF4ECEB1C5FF404006CA56D /* ActionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFCF73B1C5E750700881094 /* ActionKit.framework */; };
+		CDF4ECF51C5FF817006CA56D /* QCCProjectEssenceKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CDFCF7571C5E75CB00881094 /* QCCProjectEssenceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDF4ECF61C5FF817006CA56D /* QCCTaskManagerKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = CDFCF7581C5E75CB00881094 /* QCCTaskManagerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDFCF73F1C5E750700881094 /* ActionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFCF73E1C5E750700881094 /* ActionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDFCF7591C5E75CB00881094 /* QCCProjectEssenceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFCF7571C5E75CB00881094 /* QCCProjectEssenceKit.framework */; };
+		CDFCF75A1C5E75CB00881094 /* QCCTaskManagerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFCF7581C5E75CB00881094 /* QCCTaskManagerKit.framework */; };
+		CDFCF7661C5E773E00881094 /* BaseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCF7651C5E773E00881094 /* BaseAction.swift */; };
+		CDFCF7681C5E774C00881094 /* BasePhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCF7671C5E774C00881094 /* BasePhase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDF4ECEC1C5FF404006CA56D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFCF7321C5E750700881094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDFCF73A1C5E750700881094;
+			remoteInfo = ActionKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CDA483651C73940800486CF5 /* Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDA483661C73941000486CF5 /* QCCProjectEssenceKit.framework in Frameworks */,
+				CDA483671C73941000486CF5 /* QCCTaskManagerKit.framework in Frameworks */,
+			);
+			name = Frameworks;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDF4ECF41C5FF80A006CA56D /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDF4ECF51C5FF817006CA56D /* QCCProjectEssenceKit.framework in Copy Frameworks */,
+				CDF4ECF61C5FF817006CA56D /* QCCTaskManagerKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD7D58911C692ACC00EC616E /* QCCPhase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = QCCPhase.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CDA483631C7390EF00486CF5 /* build.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = build.bundle; sourceTree = "<group>"; };
+		CDBD895E1C5F51A900425C9B /* QCCEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCCEnvironment.swift; sourceTree = "<group>"; };
+		CDBD89611C5F553900425C9B /* QCCAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCCAction.swift; sourceTree = "<group>"; };
+		CDD7C6B41CC4E7DF009F27BF /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		CDE3880F1CCBEE9E00ED5107 /* QCCActionReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCCActionReport.swift; sourceTree = "<group>"; };
+		CDF4ECE61C5FF404006CA56D /* ActionKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActionKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDF4ECE81C5FF404006CA56D /* ActionKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionKitTests.m; sourceTree = "<group>"; };
+		CDF4ECEA1C5FF404006CA56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFCF73B1C5E750700881094 /* ActionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFCF73E1C5E750700881094 /* ActionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionKit.h; sourceTree = "<group>"; };
+		CDFCF7401C5E750700881094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDFCF7571C5E75CB00881094 /* QCCProjectEssenceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QCCProjectEssenceKit.framework; sourceTree = "<group>"; };
+		CDFCF7581C5E75CB00881094 /* QCCTaskManagerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QCCTaskManagerKit.framework; sourceTree = "<group>"; };
+		CDFCF7651C5E773E00881094 /* BaseAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAction.swift; sourceTree = "<group>"; };
+		CDFCF7671C5E774C00881094 /* BasePhase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePhase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDF4ECE31C5FF404006CA56D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF4ECEB1C5FF404006CA56D /* ActionKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFCF7371C5E750700881094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFCF75A1C5E75CB00881094 /* QCCTaskManagerKit.framework in Frameworks */,
+				CDFCF7591C5E75CB00881094 /* QCCProjectEssenceKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDBD895D1C5F519600425C9B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD895E1C5F51A900425C9B /* QCCEnvironment.swift */,
+				CDD7C6B41CC4E7DF009F27BF /* Error.swift */,
+				CDE3880F1CCBEE9E00ED5107 /* QCCActionReport.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		CDBD89601C5F552E00425C9B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD89611C5F553900425C9B /* QCCAction.swift */,
+				CD7D58911C692ACC00EC616E /* QCCPhase.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		CDF4ECE71C5FF404006CA56D /* ActionKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDA483631C7390EF00486CF5 /* build.bundle */,
+				CDF4ECE81C5FF404006CA56D /* ActionKitTests.m */,
+				CDF4ECEA1C5FF404006CA56D /* Info.plist */,
+			);
+			path = ActionKitTests;
+			sourceTree = "<group>";
+		};
+		CDFCF7311C5E750700881094 = {
+			isa = PBXGroup;
+			children = (
+				CDFCF73D1C5E750700881094 /* ActionKit */,
+				CDF4ECE71C5FF404006CA56D /* ActionKitTests */,
+				CDFCF73C1C5E750700881094 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDFCF73C1C5E750700881094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDFCF73B1C5E750700881094 /* ActionKit.framework */,
+				CDF4ECE61C5FF404006CA56D /* ActionKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDFCF73D1C5E750700881094 /* ActionKit */ = {
+			isa = PBXGroup;
+			children = (
+				CDFCF7551C5E75CB00881094 /* Classes */,
+				CDFCF7561C5E75CB00881094 /* Frameworks */,
+				CDFCF73E1C5E750700881094 /* ActionKit.h */,
+				CDFCF7401C5E750700881094 /* Info.plist */,
+			);
+			path = ActionKit;
+			sourceTree = "<group>";
+		};
+		CDFCF7551C5E75CB00881094 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD89601C5F552E00425C9B /* Actions */,
+				CDBD895D1C5F519600425C9B /* General */,
+				CDFCF75C1C5E762A00881094 /* Base */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CDFCF7561C5E75CB00881094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDFCF7571C5E75CB00881094 /* QCCProjectEssenceKit.framework */,
+				CDFCF7581C5E75CB00881094 /* QCCTaskManagerKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDFCF75C1C5E762A00881094 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CDFCF7651C5E773E00881094 /* BaseAction.swift */,
+				CDFCF7671C5E774C00881094 /* BasePhase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CDFCF7381C5E750700881094 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFCF73F1C5E750700881094 /* ActionKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CDF4ECE51C5FF404006CA56D /* ActionKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDF4ECF01C5FF404006CA56D /* Build configuration list for PBXNativeTarget "ActionKitTests" */;
+			buildPhases = (
+				CDF4ECE21C5FF404006CA56D /* Sources */,
+				CDF4ECE31C5FF404006CA56D /* Frameworks */,
+				CDF4ECE41C5FF404006CA56D /* Resources */,
+				CDA483651C73940800486CF5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDF4ECED1C5FF404006CA56D /* PBXTargetDependency */,
+			);
+			name = ActionKitTests;
+			productName = ActionKitTests;
+			productReference = CDF4ECE61C5FF404006CA56D /* ActionKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CDFCF73A1C5E750700881094 /* ActionKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFCF74F1C5E750700881094 /* Build configuration list for PBXNativeTarget "ActionKit" */;
+			buildPhases = (
+				CDFCF7361C5E750700881094 /* Sources */,
+				CDFCF7371C5E750700881094 /* Frameworks */,
+				CDFCF7381C5E750700881094 /* Headers */,
+				CDFCF7391C5E750700881094 /* Resources */,
+				CDF4ECF41C5FF80A006CA56D /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionKit;
+			productName = ActionKit;
+			productReference = CDFCF73B1C5E750700881094 /* ActionKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDFCF7321C5E750700881094 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Qapular;
+				TargetAttributes = {
+					CDF4ECE51C5FF404006CA56D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CDFCF73A1C5E750700881094 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = YN4TK7JQSA;
+					};
+				};
+			};
+			buildConfigurationList = CDFCF7351C5E750700881094 /* Build configuration list for PBXProject "ActionKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDFCF7311C5E750700881094;
+			productRefGroup = CDFCF73C1C5E750700881094 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDFCF73A1C5E750700881094 /* ActionKit */,
+				CDF4ECE51C5FF404006CA56D /* ActionKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDF4ECE41C5FF404006CA56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA483641C7390EF00486CF5 /* build.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFCF7391C5E750700881094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDF4ECE21C5FF404006CA56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDF4ECE91C5FF404006CA56D /* ActionKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDFCF7361C5E750700881094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFCF7681C5E774C00881094 /* BasePhase.swift in Sources */,
+				CD7D58921C692ACC00EC616E /* QCCPhase.swift in Sources */,
+				CDFCF7661C5E773E00881094 /* BaseAction.swift in Sources */,
+				CDBD895F1C5F51A900425C9B /* QCCEnvironment.swift in Sources */,
+				CDD7C6B51CC4E7DF009F27BF /* Error.swift in Sources */,
+				CDBD89621C5F553900425C9B /* QCCAction.swift in Sources */,
+				CDE388101CCBEE9E00ED5107 /* QCCActionReport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDF4ECED1C5FF404006CA56D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDFCF73A1C5E750700881094 /* ActionKit */;
+			targetProxy = CDF4ECEC1C5FF404006CA56D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDF4ECEE1C5FF404006CA56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/ActionKit/Frameworks/";
+				INFOPLIST_FILE = ActionKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qapular.ActionKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ActionKitTests/ActionKitTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDF4ECEF1C5FF404006CA56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/ActionKit/Frameworks/";
+				INFOPLIST_FILE = ActionKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qapular.ActionKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ActionKitTests/ActionKitTests-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		CDFCF74D1C5E750700881094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDFCF74E1C5E750700881094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDFCF7501C5E750700881094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ActionKit/Frameworks",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ActionKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qapular.ActionKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDFCF7511C5E750700881094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ActionKit/Frameworks",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ActionKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qapular.ActionKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDF4ECF01C5FF404006CA56D /* Build configuration list for PBXNativeTarget "ActionKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDF4ECEE1C5FF404006CA56D /* Debug */,
+				CDF4ECEF1C5FF404006CA56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFCF7351C5E750700881094 /* Build configuration list for PBXProject "ActionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFCF74D1C5E750700881094 /* Debug */,
+				CDFCF74E1C5E750700881094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFCF74F1C5E750700881094 /* Build configuration list for PBXNativeTarget "ActionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFCF7501C5E750700881094 /* Debug */,
+				CDFCF7511C5E750700881094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDFCF7321C5E750700881094 /* Project object */;
+}
