@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDC9C7331B582BFA000E6780 /* QCCProjectEssenceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC9C7321B582BFA000E6780 /* QCCProjectEssenceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDC9C7391B582BFA000E6780 /* QCCProjectEssenceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC9C72D1B582BFA000E6780 /* QCCProjectEssenceKit.framework */; };
+		CDC9C7401B582BFA000E6780 /* QCCProjectEssenceKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC9C73F1B582BFA000E6780 /* QCCProjectEssenceKitTests.m */; };
+		CDC9C7501B582C1F000E6780 /* QCCProjectEssence.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC9C74A1B582C1F000E6780 /* QCCProjectEssence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDC9C7511B582C1F000E6780 /* QCCProjectEssence.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC9C74B1B582C1F000E6780 /* QCCProjectEssence.m */; };
+		CDC9C7521B582C1F000E6780 /* QCCProjectFile.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC9C74C1B582C1F000E6780 /* QCCProjectFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDC9C7531B582C1F000E6780 /* QCCProjectFile.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC9C74D1B582C1F000E6780 /* QCCProjectFile.m */; };
+		CDC9C7541B582C1F000E6780 /* QCCProjectGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC9C74E1B582C1F000E6780 /* QCCProjectGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDC9C7551B582C1F000E6780 /* QCCProjectGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC9C74F1B582C1F000E6780 /* QCCProjectGroup.m */; };
+		CDC9C7581B582CA4000E6780 /* QCCProjectGroupMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC9C7561B582CA4000E6780 /* QCCProjectGroupMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDC9C7591B582CA4000E6780 /* QCCProjectGroupMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC9C7571B582CA4000E6780 /* QCCProjectGroupMonitor.m */; };
+		CDC9C77D1B584E8E000E6780 /* NSObject+Cast.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC9C77B1B584E8E000E6780 /* NSObject+Cast.h */; };
+		CDC9C77E1B584E8E000E6780 /* NSObject+Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC9C77C1B584E8E000E6780 /* NSObject+Cast.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDC9C73A1B582BFA000E6780 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDC9C7241B582BFA000E6780 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDC9C72C1B582BFA000E6780;
+			remoteInfo = QCCProjectEssenceKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDC9C72D1B582BFA000E6780 /* QCCProjectEssenceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QCCProjectEssenceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC9C7311B582BFA000E6780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC9C7321B582BFA000E6780 /* QCCProjectEssenceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCCProjectEssenceKit.h; sourceTree = "<group>"; };
+		CDC9C7381B582BFA000E6780 /* QCCProjectEssenceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QCCProjectEssenceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDC9C73E1B582BFA000E6780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC9C73F1B582BFA000E6780 /* QCCProjectEssenceKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCCProjectEssenceKitTests.m; sourceTree = "<group>"; };
+		CDC9C74A1B582C1F000E6780 /* QCCProjectEssence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCProjectEssence.h; sourceTree = "<group>"; };
+		CDC9C74B1B582C1F000E6780 /* QCCProjectEssence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCProjectEssence.m; sourceTree = "<group>"; };
+		CDC9C74C1B582C1F000E6780 /* QCCProjectFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCProjectFile.h; sourceTree = "<group>"; };
+		CDC9C74D1B582C1F000E6780 /* QCCProjectFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCProjectFile.m; sourceTree = "<group>"; };
+		CDC9C74E1B582C1F000E6780 /* QCCProjectGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCProjectGroup.h; sourceTree = "<group>"; };
+		CDC9C74F1B582C1F000E6780 /* QCCProjectGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCProjectGroup.m; sourceTree = "<group>"; };
+		CDC9C7561B582CA4000E6780 /* QCCProjectGroupMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCProjectGroupMonitor.h; sourceTree = "<group>"; };
+		CDC9C7571B582CA4000E6780 /* QCCProjectGroupMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCProjectGroupMonitor.m; sourceTree = "<group>"; };
+		CDC9C77B1B584E8E000E6780 /* NSObject+Cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Cast.h"; sourceTree = "<group>"; };
+		CDC9C77C1B584E8E000E6780 /* NSObject+Cast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Cast.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDC9C7291B582BFA000E6780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC9C7351B582BFA000E6780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC9C7391B582BFA000E6780 /* QCCProjectEssenceKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDC9C7231B582BFA000E6780 = {
+			isa = PBXGroup;
+			children = (
+				CDC9C72F1B582BFA000E6780 /* QCCProjectEssenceKit */,
+				CDC9C73C1B582BFA000E6780 /* QCCProjectEssenceKitTests */,
+				CDC9C72E1B582BFA000E6780 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDC9C72E1B582BFA000E6780 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9C72D1B582BFA000E6780 /* QCCProjectEssenceKit.framework */,
+				CDC9C7381B582BFA000E6780 /* QCCProjectEssenceKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDC9C72F1B582BFA000E6780 /* QCCProjectEssenceKit */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9C7491B582C1F000E6780 /* Classes */,
+				CDC9C7321B582BFA000E6780 /* QCCProjectEssenceKit.h */,
+				CDC9C7301B582BFA000E6780 /* Supporting Files */,
+			);
+			path = QCCProjectEssenceKit;
+			sourceTree = "<group>";
+		};
+		CDC9C7301B582BFA000E6780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9C7311B582BFA000E6780 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDC9C73C1B582BFA000E6780 /* QCCProjectEssenceKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9C73F1B582BFA000E6780 /* QCCProjectEssenceKitTests.m */,
+				CDC9C73D1B582BFA000E6780 /* Supporting Files */,
+			);
+			path = QCCProjectEssenceKitTests;
+			sourceTree = "<group>";
+		};
+		CDC9C73D1B582BFA000E6780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9C73E1B582BFA000E6780 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDC9C7491B582C1F000E6780 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9C77B1B584E8E000E6780 /* NSObject+Cast.h */,
+				CDC9C77C1B584E8E000E6780 /* NSObject+Cast.m */,
+				CDC9C74A1B582C1F000E6780 /* QCCProjectEssence.h */,
+				CDC9C74B1B582C1F000E6780 /* QCCProjectEssence.m */,
+				CDC9C74C1B582C1F000E6780 /* QCCProjectFile.h */,
+				CDC9C74D1B582C1F000E6780 /* QCCProjectFile.m */,
+				CDC9C74E1B582C1F000E6780 /* QCCProjectGroup.h */,
+				CDC9C74F1B582C1F000E6780 /* QCCProjectGroup.m */,
+				CDC9C7561B582CA4000E6780 /* QCCProjectGroupMonitor.h */,
+				CDC9C7571B582CA4000E6780 /* QCCProjectGroupMonitor.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CDC9C72A1B582BFA000E6780 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC9C7521B582C1F000E6780 /* QCCProjectFile.h in Headers */,
+				CDC9C77D1B584E8E000E6780 /* NSObject+Cast.h in Headers */,
+				CDC9C7331B582BFA000E6780 /* QCCProjectEssenceKit.h in Headers */,
+				CDC9C7541B582C1F000E6780 /* QCCProjectGroup.h in Headers */,
+				CDC9C7581B582CA4000E6780 /* QCCProjectGroupMonitor.h in Headers */,
+				CDC9C7501B582C1F000E6780 /* QCCProjectEssence.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CDC9C72C1B582BFA000E6780 /* QCCProjectEssenceKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC9C7431B582BFA000E6780 /* Build configuration list for PBXNativeTarget "QCCProjectEssenceKit" */;
+			buildPhases = (
+				CDC9C7281B582BFA000E6780 /* Sources */,
+				CDC9C7291B582BFA000E6780 /* Frameworks */,
+				CDC9C72A1B582BFA000E6780 /* Headers */,
+				CDC9C72B1B582BFA000E6780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QCCProjectEssenceKit;
+			productName = QCCProjectEssenceKit;
+			productReference = CDC9C72D1B582BFA000E6780 /* QCCProjectEssenceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CDC9C7371B582BFA000E6780 /* QCCProjectEssenceKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDC9C7461B582BFA000E6780 /* Build configuration list for PBXNativeTarget "QCCProjectEssenceKitTests" */;
+			buildPhases = (
+				CDC9C7341B582BFA000E6780 /* Sources */,
+				CDC9C7351B582BFA000E6780 /* Frameworks */,
+				CDC9C7361B582BFA000E6780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDC9C73B1B582BFA000E6780 /* PBXTargetDependency */,
+			);
+			name = QCCProjectEssenceKitTests;
+			productName = QCCProjectEssenceKitTests;
+			productReference = CDC9C7381B582BFA000E6780 /* QCCProjectEssenceKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDC9C7241B582BFA000E6780 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Qapular;
+				TargetAttributes = {
+					CDC9C72C1B582BFA000E6780 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = YN4TK7JQSA;
+					};
+					CDC9C7371B582BFA000E6780 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = CDC9C7271B582BFA000E6780 /* Build configuration list for PBXProject "QCCProjectEssenceKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDC9C7231B582BFA000E6780;
+			productRefGroup = CDC9C72E1B582BFA000E6780 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDC9C72C1B582BFA000E6780 /* QCCProjectEssenceKit */,
+				CDC9C7371B582BFA000E6780 /* QCCProjectEssenceKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDC9C72B1B582BFA000E6780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC9C7361B582BFA000E6780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDC9C7281B582BFA000E6780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC9C7551B582C1F000E6780 /* QCCProjectGroup.m in Sources */,
+				CDC9C7511B582C1F000E6780 /* QCCProjectEssence.m in Sources */,
+				CDC9C7591B582CA4000E6780 /* QCCProjectGroupMonitor.m in Sources */,
+				CDC9C77E1B584E8E000E6780 /* NSObject+Cast.m in Sources */,
+				CDC9C7531B582C1F000E6780 /* QCCProjectFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDC9C7341B582BFA000E6780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC9C7401B582BFA000E6780 /* QCCProjectEssenceKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDC9C73B1B582BFA000E6780 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDC9C72C1B582BFA000E6780 /* QCCProjectEssenceKit */;
+			targetProxy = CDC9C73A1B582BFA000E6780 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CDC9C7411B582BFA000E6780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDC9C7421B582BFA000E6780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDC9C7441B582BFA000E6780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = QCCProjectEssenceKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qapular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CDC9C7451B582BFA000E6780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = QCCProjectEssenceKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qapular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CDC9C7471B582BFA000E6780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QCCProjectEssenceKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qapular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CDC9C7481B582BFA000E6780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QCCProjectEssenceKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qapular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDC9C7271B582BFA000E6780 /* Build configuration list for PBXProject "QCCProjectEssenceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC9C7411B582BFA000E6780 /* Debug */,
+				CDC9C7421B582BFA000E6780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDC9C7431B582BFA000E6780 /* Build configuration list for PBXNativeTarget "QCCProjectEssenceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC9C7441B582BFA000E6780 /* Debug */,
+				CDC9C7451B582BFA000E6780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDC9C7461B582BFA000E6780 /* Build configuration list for PBXNativeTarget "QCCProjectEssenceKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC9C7471B582BFA000E6780 /* Debug */,
+				CDC9C7481B582BFA000E6780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDC9C7241B582BFA000E6780 /* Project object */;
+}

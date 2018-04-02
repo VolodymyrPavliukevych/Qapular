@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD24C54B1B61349200621DA3 /* QCCTargetManagerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CD24C54A1B61349200621DA3 /* QCCTargetManagerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD24C5511B61349200621DA3 /* QCCTargetManagerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD24C5451B61349200621DA3 /* QCCTargetManagerKit.framework */; };
+		CD24C5581B61349200621DA3 /* QCCTargetManagerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24C5571B61349200621DA3 /* QCCTargetManagerKitTests.m */; };
+		CD3F02F41CF216D50029D0D7 /* QCCTargetManagerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD24C5451B61349200621DA3 /* QCCTargetManagerKit.framework */; };
+		CD3F02F51CF216D50029D0D7 /* QCCTargetManagerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD24C5451B61349200621DA3 /* QCCTargetManagerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD3F02FB1CF217530029D0D7 /* QCCSerialWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F02FA1CF217530029D0D7 /* QCCSerialWindowController.m */; };
+		CD400AAE1B6A0FF700234C3C /* libarchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD400AAD1B6A0FF700234C3C /* libarchive.a */; };
+		CD43DFAF1B6298F300E3DAF8 /* QCCBasePackage.h in Headers */ = {isa = PBXBuildFile; fileRef = CD43DF931B6298F300E3DAF8 /* QCCBasePackage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD43DFB01B6298F300E3DAF8 /* QCCBasePackage.m in Sources */ = {isa = PBXBuildFile; fileRef = CD43DF941B6298F300E3DAF8 /* QCCBasePackage.m */; };
+		CD43DFB11B6298F300E3DAF8 /* QCCBaseSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = CD43DF961B6298F300E3DAF8 /* QCCBaseSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD43DFB21B6298F300E3DAF8 /* QCCBaseSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CD43DF971B6298F300E3DAF8 /* QCCBaseSchema.m */; };
+		CD43DFB71B6298F300E3DAF8 /* QCCBaseTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = CD43DF9D1B6298F300E3DAF8 /* QCCBaseTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD43DFB81B6298F300E3DAF8 /* QCCBaseTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = CD43DF9E1B6298F300E3DAF8 /* QCCBaseTarget.m */; };
+		CD43DFB91B6298F300E3DAF8 /* QCCTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = CD43DF9F1B6298F300E3DAF8 /* QCCTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD43DFBA1B6298F300E3DAF8 /* QCCTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = CD43DFA01B6298F300E3DAF8 /* QCCTarget.m */; };
+		CD43DFBB1B6298F300E3DAF8 /* QCCTargetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD43DFA11B6298F300E3DAF8 /* QCCTargetManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD43DFBC1B6298F300E3DAF8 /* QCCTargetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD43DFA21B6298F300E3DAF8 /* QCCTargetManager.m */; };
+		CD44EBF41B74ABA600C0ED9D /* QCCPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = CD44EBF21B74ABA600C0ED9D /* QCCPackage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD44EBF51B74ABA600C0ED9D /* QCCPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = CD44EBF31B74ABA600C0ED9D /* QCCPackage.m */; };
+		CD4B3A6F1CF2115900470931 /* QCCSerialConsoleViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4B3A6C1CF2115900470931 /* QCCSerialConsoleViewController.h */; };
+		CD4B3A701CF2115900470931 /* QCCSerialConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B3A6D1CF2115900470931 /* QCCSerialConsoleViewController.m */; };
+		CD4B3A711CF2115900470931 /* QCCSerialConsoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD4B3A6E1CF2115900470931 /* QCCSerialConsoleViewController.xib */; };
+		CD4B3A861CF2168500470931 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B3A851CF2168500470931 /* AppDelegate.m */; };
+		CD4B3A891CF2168500470931 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4B3A881CF2168500470931 /* main.m */; };
+		CD4B3A8E1CF2168500470931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4B3A8D1CF2168500470931 /* Assets.xcassets */; };
+		CD4B3A911CF2168600470931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4B3A8F1CF2168600470931 /* Main.storyboard */; };
+		CD86DD9D1B77B1F2005D279B /* TargetManager.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD86DD9C1B77B1F2005D279B /* TargetManager.plist */; };
+		CD88FCF41B715590004FAD08 /* QCCSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = CD88FCF21B715590004FAD08 /* QCCSchema.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD88FCF51B715590004FAD08 /* QCCSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = CD88FCF31B715590004FAD08 /* QCCSchema.m */; };
+		CD8E1CC41B67A281001A8BBC /* archive.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8E1CC01B67A281001A8BBC /* archive.h */; };
+		CD8E1CC51B67A281001A8BBC /* archive_entry.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8E1CC11B67A281001A8BBC /* archive_entry.h */; };
+		CD8E1CC91B67A303001A8BBC /* QCCDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8E1CC71B67A303001A8BBC /* QCCDecompressor.h */; };
+		CD8E1CCA1B67A303001A8BBC /* QCCDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8E1CC81B67A303001A8BBC /* QCCDecompressor.m */; };
+		CD8E1CCD1B67A6A2001A8BBC /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E1CCB1B67A6A2001A8BBC /* libbz2.dylib */; };
+		CD8E1CCE1B67A6A2001A8BBC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E1CCC1B67A6A2001A8BBC /* libz.dylib */; };
+		CD8E1CD01B67A6B5001A8BBC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E1CCF1B67A6B5001A8BBC /* libxml2.dylib */; };
+		CD8E1CD41B67A75A001A8BBC /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E1CD31B67A75A001A8BBC /* libiconv.dylib */; };
+		CD8E1CE31B67B477001A8BBC /* libexpat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E1CE21B67B477001A8BBC /* libexpat.dylib */; };
+		CD9951FC1CEE0CEA0063C223 /* ORSSerialBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9951F21CEE0CEA0063C223 /* ORSSerialBuffer.h */; };
+		CD9951FD1CEE0CEA0063C223 /* ORSSerialBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9951F31CEE0CEA0063C223 /* ORSSerialBuffer.m */; };
+		CD9951FE1CEE0CEA0063C223 /* ORSSerialPacketDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9951F41CEE0CEA0063C223 /* ORSSerialPacketDescriptor.h */; };
+		CD9951FF1CEE0CEA0063C223 /* ORSSerialPacketDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9951F51CEE0CEA0063C223 /* ORSSerialPacketDescriptor.m */; };
+		CD9952001CEE0CEA0063C223 /* ORSSerialPort.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9951F61CEE0CEA0063C223 /* ORSSerialPort.h */; };
+		CD9952011CEE0CEA0063C223 /* ORSSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9951F71CEE0CEA0063C223 /* ORSSerialPort.m */; };
+		CD9952021CEE0CEA0063C223 /* ORSSerialPortManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9951F81CEE0CEA0063C223 /* ORSSerialPortManager.h */; };
+		CD9952031CEE0CEA0063C223 /* ORSSerialPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9951F91CEE0CEA0063C223 /* ORSSerialPortManager.m */; };
+		CD9952041CEE0CEA0063C223 /* ORSSerialRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9951FA1CEE0CEA0063C223 /* ORSSerialRequest.h */; };
+		CD9952051CEE0CEA0063C223 /* ORSSerialRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9951FB1CEE0CEA0063C223 /* ORSSerialRequest.m */; };
+		CD9FE0251B66566400C363F2 /* QCCPortManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9FE0231B66566400C363F2 /* QCCPortManager.h */; };
+		CD9FE0261B66566400C363F2 /* QCCPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9FE0241B66566400C363F2 /* QCCPortManager.m */; };
+		CDB0BF371B793235005D5A23 /* QCComplexURL.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB0BF351B793235005D5A23 /* QCComplexURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDB0BF381B793235005D5A23 /* QCComplexURL.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB0BF361B793235005D5A23 /* QCComplexURL.m */; };
+		CDF64F4F1CF4780400525C0D /* ORSSerialPort+Hardware.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF64F4D1CF4780400525C0D /* ORSSerialPort+Hardware.h */; };
+		CDF64F501CF4780400525C0D /* ORSSerialPort+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF64F4E1CF4780400525C0D /* ORSSerialPort+Hardware.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD24C5521B61349200621DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD24C53C1B61349200621DA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD24C5441B61349200621DA3;
+			remoteInfo = QCCTargetManagerKit;
+		};
+		CD3F02F61CF216D50029D0D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD24C53C1B61349200621DA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD24C5441B61349200621DA3;
+			remoteInfo = QCCTargetManagerKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD3F02F81CF216D50029D0D7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD3F02F51CF216D50029D0D7 /* QCCTargetManagerKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4302D71B6782760085F605 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD24C5451B61349200621DA3 /* QCCTargetManagerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QCCTargetManagerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD24C5491B61349200621DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD24C54A1B61349200621DA3 /* QCCTargetManagerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCCTargetManagerKit.h; sourceTree = "<group>"; };
+		CD24C5501B61349200621DA3 /* QCCTargetManagerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QCCTargetManagerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD24C5561B61349200621DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD24C5571B61349200621DA3 /* QCCTargetManagerKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = QCCTargetManagerKitTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CD3F02F91CF217530029D0D7 /* QCCSerialWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCSerialWindowController.h; sourceTree = "<group>"; };
+		CD3F02FA1CF217530029D0D7 /* QCCSerialWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCSerialWindowController.m; sourceTree = "<group>"; };
+		CD400AAD1B6A0FF700234C3C /* libarchive.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libarchive.a; sourceTree = "<group>"; };
+		CD43DF931B6298F300E3DAF8 /* QCCBasePackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = QCCBasePackage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CD43DF941B6298F300E3DAF8 /* QCCBasePackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = QCCBasePackage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CD43DF961B6298F300E3DAF8 /* QCCBaseSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = QCCBaseSchema.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CD43DF971B6298F300E3DAF8 /* QCCBaseSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = QCCBaseSchema.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CD43DF9D1B6298F300E3DAF8 /* QCCBaseTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = QCCBaseTarget.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CD43DF9E1B6298F300E3DAF8 /* QCCBaseTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = QCCBaseTarget.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CD43DF9F1B6298F300E3DAF8 /* QCCTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCTarget.h; sourceTree = "<group>"; };
+		CD43DFA01B6298F300E3DAF8 /* QCCTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCTarget.m; sourceTree = "<group>"; };
+		CD43DFA11B6298F300E3DAF8 /* QCCTargetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCTargetManager.h; sourceTree = "<group>"; };
+		CD43DFA21B6298F300E3DAF8 /* QCCTargetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = QCCTargetManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CD44EBF21B74ABA600C0ED9D /* QCCPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCPackage.h; sourceTree = "<group>"; };
+		CD44EBF31B74ABA600C0ED9D /* QCCPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCPackage.m; sourceTree = "<group>"; };
+		CD4B3A6C1CF2115900470931 /* QCCSerialConsoleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCCSerialConsoleViewController.h; path = QCCTargetManagerKit/QCCSerialConsoleViewController.h; sourceTree = SOURCE_ROOT; };
+		CD4B3A6D1CF2115900470931 /* QCCSerialConsoleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCCSerialConsoleViewController.m; path = QCCTargetManagerKit/QCCSerialConsoleViewController.m; sourceTree = SOURCE_ROOT; };
+		CD4B3A6E1CF2115900470931 /* QCCSerialConsoleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QCCSerialConsoleViewController.xib; path = QCCTargetManagerKit/QCCSerialConsoleViewController.xib; sourceTree = SOURCE_ROOT; };
+		CD4B3A821CF2168500470931 /* SerialConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SerialConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4B3A841CF2168500470931 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD4B3A851CF2168500470931 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD4B3A881CF2168500470931 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD4B3A8D1CF2168500470931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD4B3A901CF2168600470931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD4B3A921CF2168600470931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD86DD9C1B77B1F2005D279B /* TargetManager.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TargetManager.plist; sourceTree = "<group>"; };
+		CD88FCF21B715590004FAD08 /* QCCSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = QCCSchema.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CD88FCF31B715590004FAD08 /* QCCSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = QCCSchema.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CD8E1CC01B67A281001A8BBC /* archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = archive.h; sourceTree = "<group>"; };
+		CD8E1CC11B67A281001A8BBC /* archive_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = archive_entry.h; sourceTree = "<group>"; };
+		CD8E1CC71B67A303001A8BBC /* QCCDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCDecompressor.h; sourceTree = "<group>"; };
+		CD8E1CC81B67A303001A8BBC /* QCCDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCDecompressor.m; sourceTree = "<group>"; };
+		CD8E1CCB1B67A6A2001A8BBC /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		CD8E1CCC1B67A6A2001A8BBC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CD8E1CCF1B67A6B5001A8BBC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		CD8E1CD31B67A75A001A8BBC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		CD8E1CE21B67B477001A8BBC /* libexpat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexpat.dylib; path = usr/lib/libexpat.dylib; sourceTree = SDKROOT; };
+		CD9951F21CEE0CEA0063C223 /* ORSSerialBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialBuffer.h; sourceTree = "<group>"; };
+		CD9951F31CEE0CEA0063C223 /* ORSSerialBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialBuffer.m; sourceTree = "<group>"; };
+		CD9951F41CEE0CEA0063C223 /* ORSSerialPacketDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPacketDescriptor.h; sourceTree = "<group>"; };
+		CD9951F51CEE0CEA0063C223 /* ORSSerialPacketDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPacketDescriptor.m; sourceTree = "<group>"; };
+		CD9951F61CEE0CEA0063C223 /* ORSSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPort.h; sourceTree = "<group>"; };
+		CD9951F71CEE0CEA0063C223 /* ORSSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPort.m; sourceTree = "<group>"; };
+		CD9951F81CEE0CEA0063C223 /* ORSSerialPortManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPortManager.h; sourceTree = "<group>"; };
+		CD9951F91CEE0CEA0063C223 /* ORSSerialPortManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPortManager.m; sourceTree = "<group>"; };
+		CD9951FA1CEE0CEA0063C223 /* ORSSerialRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialRequest.h; sourceTree = "<group>"; };
+		CD9951FB1CEE0CEA0063C223 /* ORSSerialRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialRequest.m; sourceTree = "<group>"; };
+		CD9FE0231B66566400C363F2 /* QCCPortManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCCPortManager.h; sourceTree = "<group>"; };
+		CD9FE0241B66566400C363F2 /* QCCPortManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCCPortManager.m; sourceTree = "<group>"; };
+		CDB0BF351B793235005D5A23 /* QCComplexURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = QCComplexURL.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		CDB0BF361B793235005D5A23 /* QCComplexURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = QCComplexURL.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CDF64F4D1CF4780400525C0D /* ORSSerialPort+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ORSSerialPort+Hardware.h"; sourceTree = "<group>"; };
+		CDF64F4E1CF4780400525C0D /* ORSSerialPort+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ORSSerialPort+Hardware.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD24C5411B61349200621DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD400AAE1B6A0FF700234C3C /* libarchive.a in Frameworks */,
+				CD8E1CE31B67B477001A8BBC /* libexpat.dylib in Frameworks */,
+				CD8E1CD41B67A75A001A8BBC /* libiconv.dylib in Frameworks */,
+				CD8E1CD01B67A6B5001A8BBC /* libxml2.dylib in Frameworks */,
+				CD8E1CCD1B67A6A2001A8BBC /* libbz2.dylib in Frameworks */,
+				CD8E1CCE1B67A6A2001A8BBC /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD24C54D1B61349200621DA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD24C5511B61349200621DA3 /* QCCTargetManagerKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4B3A7F1CF2168500470931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3F02F41CF216D50029D0D7 /* QCCTargetManagerKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD24C53B1B61349200621DA3 = {
+			isa = PBXGroup;
+			children = (
+				CD24C5471B61349200621DA3 /* QCCTargetManagerKit */,
+				CD24C5541B61349200621DA3 /* QCCTargetManagerKitTests */,
+				CD4B3A831CF2168500470931 /* SerialConsole */,
+				CD24C5461B61349200621DA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD24C5461B61349200621DA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD24C5451B61349200621DA3 /* QCCTargetManagerKit.framework */,
+				CD24C5501B61349200621DA3 /* QCCTargetManagerKitTests.xctest */,
+				CD4B3A821CF2168500470931 /* SerialConsole.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD24C5471B61349200621DA3 /* QCCTargetManagerKit */ = {
+			isa = PBXGroup;
+			children = (
+				CD43DF561B627C1700E3DAF8 /* Classes */,
+				CD86DD9B1B77B1F2005D279B /* Resources */,
+				CD8E1CBE1B67A281001A8BBC /* libarchive */,
+				CD4302D81B6782BA0085F605 /* Frameworks */,
+				CD24C54A1B61349200621DA3 /* QCCTargetManagerKit.h */,
+				CD24C5481B61349200621DA3 /* Supporting Files */,
+			);
+			path = QCCTargetManagerKit;
+			sourceTree = "<group>";
+		};
+		CD24C5481B61349200621DA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD24C5491B61349200621DA3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD24C5541B61349200621DA3 /* QCCTargetManagerKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD24C5571B61349200621DA3 /* QCCTargetManagerKitTests.m */,
+				CD24C5551B61349200621DA3 /* Supporting Files */,
+			);
+			path = QCCTargetManagerKitTests;
+			sourceTree = "<group>";
+		};
+		CD24C5551B61349200621DA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD24C5561B61349200621DA3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD4302D81B6782BA0085F605 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD43DF561B627C1700E3DAF8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD9FE0221B66566400C363F2 /* PortManager */,
+				CD43DF8C1B6298F300E3DAF8 /* Model */,
+				CD43DFAA1B6298F300E3DAF8 /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CD43DF8C1B6298F300E3DAF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDB0BF341B7931F7005D5A23 /* Fondation */,
+				CD43DF921B6298F300E3DAF8 /* Package */,
+				CD43DF951B6298F300E3DAF8 /* Schema */,
+				CD43DF9C1B6298F300E3DAF8 /* Target */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD43DF921B6298F300E3DAF8 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				CD43DF931B6298F300E3DAF8 /* QCCBasePackage.h */,
+				CD43DF941B6298F300E3DAF8 /* QCCBasePackage.m */,
+				CD44EBF21B74ABA600C0ED9D /* QCCPackage.h */,
+				CD44EBF31B74ABA600C0ED9D /* QCCPackage.m */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		CD43DF951B6298F300E3DAF8 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				CD43DF961B6298F300E3DAF8 /* QCCBaseSchema.h */,
+				CD43DF971B6298F300E3DAF8 /* QCCBaseSchema.m */,
+				CD88FCF21B715590004FAD08 /* QCCSchema.h */,
+				CD88FCF31B715590004FAD08 /* QCCSchema.m */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		CD43DF9C1B6298F300E3DAF8 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				CD43DF9D1B6298F300E3DAF8 /* QCCBaseTarget.h */,
+				CD43DF9E1B6298F300E3DAF8 /* QCCBaseTarget.m */,
+				CD43DF9F1B6298F300E3DAF8 /* QCCTarget.h */,
+				CD43DFA01B6298F300E3DAF8 /* QCCTarget.m */,
+				CD43DFA11B6298F300E3DAF8 /* QCCTargetManager.h */,
+				CD43DFA21B6298F300E3DAF8 /* QCCTargetManager.m */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		CD43DFAA1B6298F300E3DAF8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CD4B3A6C1CF2115900470931 /* QCCSerialConsoleViewController.h */,
+				CD4B3A6D1CF2115900470931 /* QCCSerialConsoleViewController.m */,
+				CD4B3A6E1CF2115900470931 /* QCCSerialConsoleViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CD4B3A831CF2168500470931 /* SerialConsole */ = {
+			isa = PBXGroup;
+			children = (
+				CD3F02F91CF217530029D0D7 /* QCCSerialWindowController.h */,
+				CD3F02FA1CF217530029D0D7 /* QCCSerialWindowController.m */,
+				CD4B3A841CF2168500470931 /* AppDelegate.h */,
+				CD4B3A851CF2168500470931 /* AppDelegate.m */,
+				CD4B3A8D1CF2168500470931 /* Assets.xcassets */,
+				CD4B3A8F1CF2168600470931 /* Main.storyboard */,
+				CD4B3A921CF2168600470931 /* Info.plist */,
+				CD4B3A871CF2168500470931 /* Supporting Files */,
+			);
+			path = SerialConsole;
+			sourceTree = "<group>";
+		};
+		CD4B3A871CF2168500470931 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD4B3A881CF2168500470931 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD86DD9B1B77B1F2005D279B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD86DD9C1B77B1F2005D279B /* TargetManager.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD8E1CBE1B67A281001A8BBC /* libarchive */ = {
+			isa = PBXGroup;
+			children = (
+				CD8E1CBF1B67A281001A8BBC /* include */,
+				CD8E1CC21B67A281001A8BBC /* lib */,
+				CD8E1CC71B67A303001A8BBC /* QCCDecompressor.h */,
+				CD8E1CC81B67A303001A8BBC /* QCCDecompressor.m */,
+			);
+			path = libarchive;
+			sourceTree = "<group>";
+		};
+		CD8E1CBF1B67A281001A8BBC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CD8E1CC01B67A281001A8BBC /* archive.h */,
+				CD8E1CC11B67A281001A8BBC /* archive_entry.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		CD8E1CC21B67A281001A8BBC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CD400AAD1B6A0FF700234C3C /* libarchive.a */,
+				CD8E1CE21B67B477001A8BBC /* libexpat.dylib */,
+				CD8E1CD31B67A75A001A8BBC /* libiconv.dylib */,
+				CD8E1CCF1B67A6B5001A8BBC /* libxml2.dylib */,
+				CD8E1CCB1B67A6A2001A8BBC /* libbz2.dylib */,
+				CD8E1CCC1B67A6A2001A8BBC /* libz.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		CD9951F11CEE0CEA0063C223 /* ORSFramework */ = {
+			isa = PBXGroup;
+			children = (
+				CD9951F21CEE0CEA0063C223 /* ORSSerialBuffer.h */,
+				CD9951F31CEE0CEA0063C223 /* ORSSerialBuffer.m */,
+				CD9951F41CEE0CEA0063C223 /* ORSSerialPacketDescriptor.h */,
+				CD9951F51CEE0CEA0063C223 /* ORSSerialPacketDescriptor.m */,
+				CD9951F61CEE0CEA0063C223 /* ORSSerialPort.h */,
+				CD9951F71CEE0CEA0063C223 /* ORSSerialPort.m */,
+				CD9951F81CEE0CEA0063C223 /* ORSSerialPortManager.h */,
+				CD9951F91CEE0CEA0063C223 /* ORSSerialPortManager.m */,
+				CD9951FA1CEE0CEA0063C223 /* ORSSerialRequest.h */,
+				CD9951FB1CEE0CEA0063C223 /* ORSSerialRequest.m */,
+				CDF64F4D1CF4780400525C0D /* ORSSerialPort+Hardware.h */,
+				CDF64F4E1CF4780400525C0D /* ORSSerialPort+Hardware.m */,
+			);
+			path = ORSFramework;
+			sourceTree = "<group>";
+		};
+		CD9FE0221B66566400C363F2 /* PortManager */ = {
+			isa = PBXGroup;
+			children = (
+				CD9951F11CEE0CEA0063C223 /* ORSFramework */,
+				CD9FE0231B66566400C363F2 /* QCCPortManager.h */,
+				CD9FE0241B66566400C363F2 /* QCCPortManager.m */,
+			);
+			path = PortManager;
+			sourceTree = "<group>";
+		};
+		CDB0BF341B7931F7005D5A23 /* Fondation */ = {
+			isa = PBXGroup;
+			children = (
+				CDB0BF351B793235005D5A23 /* QCComplexURL.h */,
+				CDB0BF361B793235005D5A23 /* QCComplexURL.m */,
+			);
+			path = Fondation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD24C5421B61349200621DA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD8E1CC41B67A281001A8BBC /* archive.h in Headers */,
+				CD43DFB11B6298F300E3DAF8 /* QCCBaseSchema.h in Headers */,
+				CD43DFAF1B6298F300E3DAF8 /* QCCBasePackage.h in Headers */,
+				CD4B3A6F1CF2115900470931 /* QCCSerialConsoleViewController.h in Headers */,
+				CD43DFBB1B6298F300E3DAF8 /* QCCTargetManager.h in Headers */,
+				CD8E1CC51B67A281001A8BBC /* archive_entry.h in Headers */,
+				CD44EBF41B74ABA600C0ED9D /* QCCPackage.h in Headers */,
+				CD88FCF41B715590004FAD08 /* QCCSchema.h in Headers */,
+				CDF64F4F1CF4780400525C0D /* ORSSerialPort+Hardware.h in Headers */,
+				CD43DFB91B6298F300E3DAF8 /* QCCTarget.h in Headers */,
+				CDB0BF371B793235005D5A23 /* QCComplexURL.h in Headers */,
+				CD9952021CEE0CEA0063C223 /* ORSSerialPortManager.h in Headers */,
+				CD9951FE1CEE0CEA0063C223 /* ORSSerialPacketDescriptor.h in Headers */,
+				CD9952001CEE0CEA0063C223 /* ORSSerialPort.h in Headers */,
+				CD9951FC1CEE0CEA0063C223 /* ORSSerialBuffer.h in Headers */,
+				CD9952041CEE0CEA0063C223 /* ORSSerialRequest.h in Headers */,
+				CD8E1CC91B67A303001A8BBC /* QCCDecompressor.h in Headers */,
+				CD9FE0251B66566400C363F2 /* QCCPortManager.h in Headers */,
+				CD43DFB71B6298F300E3DAF8 /* QCCBaseTarget.h in Headers */,
+				CD24C54B1B61349200621DA3 /* QCCTargetManagerKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD24C5441B61349200621DA3 /* QCCTargetManagerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD24C55B1B61349200621DA3 /* Build configuration list for PBXNativeTarget "QCCTargetManagerKit" */;
+			buildPhases = (
+				CD24C5401B61349200621DA3 /* Sources */,
+				CD24C5411B61349200621DA3 /* Frameworks */,
+				CD24C5421B61349200621DA3 /* Headers */,
+				CD24C5431B61349200621DA3 /* Resources */,
+				CD4302D71B6782760085F605 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QCCTargetManagerKit;
+			productName = QCCTargetManagerKit;
+			productReference = CD24C5451B61349200621DA3 /* QCCTargetManagerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD24C54F1B61349200621DA3 /* QCCTargetManagerKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD24C55E1B61349200621DA3 /* Build configuration list for PBXNativeTarget "QCCTargetManagerKitTests" */;
+			buildPhases = (
+				CD24C54C1B61349200621DA3 /* Sources */,
+				CD24C54D1B61349200621DA3 /* Frameworks */,
+				CD24C54E1B61349200621DA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD24C5531B61349200621DA3 /* PBXTargetDependency */,
+			);
+			name = QCCTargetManagerKitTests;
+			productName = QCCTargetManagerKitTests;
+			productReference = CD24C5501B61349200621DA3 /* QCCTargetManagerKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD4B3A811CF2168500470931 /* SerialConsole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4B3A951CF2168600470931 /* Build configuration list for PBXNativeTarget "SerialConsole" */;
+			buildPhases = (
+				CD4B3A7E1CF2168500470931 /* Sources */,
+				CD4B3A7F1CF2168500470931 /* Frameworks */,
+				CD4B3A801CF2168500470931 /* Resources */,
+				CD3F02F81CF216D50029D0D7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD3F02F71CF216D50029D0D7 /* PBXTargetDependency */,
+			);
+			name = SerialConsole;
+			productName = SerialConsole;
+			productReference = CD4B3A821CF2168500470931 /* SerialConsole.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD24C53C1B61349200621DA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QCC;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Qapular;
+				TargetAttributes = {
+					CD24C5441B61349200621DA3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CD24C54F1B61349200621DA3 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CD4B3A811CF2168500470931 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CD24C53F1B61349200621DA3 /* Build configuration list for PBXProject "QCCTargetManagerKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD24C53B1B61349200621DA3;
+			productRefGroup = CD24C5461B61349200621DA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD24C5441B61349200621DA3 /* QCCTargetManagerKit */,
+				CD24C54F1B61349200621DA3 /* QCCTargetManagerKitTests */,
+				CD4B3A811CF2168500470931 /* SerialConsole */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD24C5431B61349200621DA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4B3A711CF2115900470931 /* QCCSerialConsoleViewController.xib in Resources */,
+				CD86DD9D1B77B1F2005D279B /* TargetManager.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD24C54E1B61349200621DA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4B3A801CF2168500470931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4B3A8E1CF2168500470931 /* Assets.xcassets in Resources */,
+				CD4B3A911CF2168600470931 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD24C5401B61349200621DA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDB0BF381B793235005D5A23 /* QCComplexURL.m in Sources */,
+				CD44EBF51B74ABA600C0ED9D /* QCCPackage.m in Sources */,
+				CD9951FD1CEE0CEA0063C223 /* ORSSerialBuffer.m in Sources */,
+				CD43DFB21B6298F300E3DAF8 /* QCCBaseSchema.m in Sources */,
+				CD8E1CCA1B67A303001A8BBC /* QCCDecompressor.m in Sources */,
+				CD9952031CEE0CEA0063C223 /* ORSSerialPortManager.m in Sources */,
+				CD88FCF51B715590004FAD08 /* QCCSchema.m in Sources */,
+				CD43DFB01B6298F300E3DAF8 /* QCCBasePackage.m in Sources */,
+				CD4B3A701CF2115900470931 /* QCCSerialConsoleViewController.m in Sources */,
+				CDF64F501CF4780400525C0D /* ORSSerialPort+Hardware.m in Sources */,
+				CD43DFBA1B6298F300E3DAF8 /* QCCTarget.m in Sources */,
+				CD9952051CEE0CEA0063C223 /* ORSSerialRequest.m in Sources */,
+				CD9952011CEE0CEA0063C223 /* ORSSerialPort.m in Sources */,
+				CD43DFB81B6298F300E3DAF8 /* QCCBaseTarget.m in Sources */,
+				CD9951FF1CEE0CEA0063C223 /* ORSSerialPacketDescriptor.m in Sources */,
+				CD43DFBC1B6298F300E3DAF8 /* QCCTargetManager.m in Sources */,
+				CD9FE0261B66566400C363F2 /* QCCPortManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD24C54C1B61349200621DA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD24C5581B61349200621DA3 /* QCCTargetManagerKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD4B3A7E1CF2168500470931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3F02FB1CF217530029D0D7 /* QCCSerialWindowController.m in Sources */,
+				CD4B3A891CF2168500470931 /* main.m in Sources */,
+				CD4B3A861CF2168500470931 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD24C5531B61349200621DA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD24C5441B61349200621DA3 /* QCCTargetManagerKit */;
+			targetProxy = CD24C5521B61349200621DA3 /* PBXContainerItemProxy */;
+		};
+		CD3F02F71CF216D50029D0D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD24C5441B61349200621DA3 /* QCCTargetManagerKit */;
+			targetProxy = CD3F02F61CF216D50029D0D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD4B3A8F1CF2168600470931 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD4B3A901CF2168600470931 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD24C5591B61349200621DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD24C55A1B61349200621DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD24C55C1B61349200621DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = QCCTargetManagerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QCCTargetManagerKit/libarchive/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qapular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CD24C55D1B61349200621DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = QCCTargetManagerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QCCTargetManagerKit/libarchive/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qapular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CD24C55F1B61349200621DA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QCCTargetManagerKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qapular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD24C5601B61349200621DA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QCCTargetManagerKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qapular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD4B3A931CF2168600470931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SerialConsole/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qapular.SerialConsole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD4B3A941CF2168600470931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SerialConsole/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qapular.SerialConsole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD24C53F1B61349200621DA3 /* Build configuration list for PBXProject "QCCTargetManagerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD24C5591B61349200621DA3 /* Debug */,
+				CD24C55A1B61349200621DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD24C55B1B61349200621DA3 /* Build configuration list for PBXNativeTarget "QCCTargetManagerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD24C55C1B61349200621DA3 /* Debug */,
+				CD24C55D1B61349200621DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD24C55E1B61349200621DA3 /* Build configuration list for PBXNativeTarget "QCCTargetManagerKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD24C55F1B61349200621DA3 /* Debug */,
+				CD24C5601B61349200621DA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD4B3A951CF2168600470931 /* Build configuration list for PBXNativeTarget "SerialConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4B3A931CF2168600470931 /* Debug */,
+				CD4B3A941CF2168600470931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD24C53C1B61349200621DA3 /* Project object */;
+}

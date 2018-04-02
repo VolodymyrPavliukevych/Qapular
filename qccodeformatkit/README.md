@@ -1,0 +1,3 @@
+# QCCodeFormatKit
+
+Clang code formater. 

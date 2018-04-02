@@ -1,0 +1,18 @@
+Nordic/Nordic-XCode-Template/environment/gcc-arm-none-eabi
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+*.bak*
+
+#Xcode files
+*.log
+xcuserdata
+*.xcuserdatad
+project.xcworkspace
+
+#Project files
+[Bb]uild/
+
+#Version control files
+.svn
+*.orig

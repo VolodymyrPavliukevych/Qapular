@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="SerialConsoleViewController" customClass="QCCSerialConsoleViewController">
+            <connections>
+                <outlet property="autoscrollCheckField" destination="Xhk-ke-PWR" id="O5H-HC-et9"/>
+                <outlet property="inputTextView" destination="rSb-gV-kLd" id="wvc-JN-Ck3"/>
+                <outlet property="openPortButton" destination="mC7-VS-gmI" id="uYI-Aw-yab"/>
+                <outlet property="outputTextField" destination="9pg-gc-jiB" id="CVb-4c-A3v"/>
+                <outlet property="sendDataButton" destination="bJG-mN-cJb" id="ZMB-dD-gHR"/>
+                <outlet property="serialPortBaudRatePopUpButton" destination="sjQ-j1-Cyi" id="Jt9-6r-JA3"/>
+                <outlet property="serialPortPopUpButton" destination="X1M-pM-pRL" id="ekm-yH-go1"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="X1M-pM-pRL" userLabel="SerialPortPopUpButton">
+                    <rect key="frame" x="18" y="228" width="250" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Wqa-UD-dnk"/>
+                    </constraints>
+                    <popUpButtonCell key="cell" type="push" title="Ports" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="tig-f9-dmi" id="nxo-2f-sDK">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="s6B-h9-orq">
+                            <items>
+                                <menuItem title="Ports" state="on" id="tig-f9-dmi"/>
+                                <menuItem title="Item 2" id="2xY-QZ-ArX"/>
+                                <menuItem title="Item 3" id="QR7-mT-htJ"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="-2" name="content" keyPath="self.portManager.serialPortManager.availablePorts" id="BGh-r0-Rn1"/>
+                        <binding destination="-2" name="contentValues" keyPath="self.portManager.serialPortManager.availablePorts.BSDName" previousBinding="BGh-r0-Rn1" id="cbE-pO-aa7"/>
+                        <binding destination="-2" name="selectedObject" keyPath="self.selectedSerialPort" previousBinding="cbE-pO-aa7" id="DdO-1M-qcS"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sjQ-j1-Cyi" userLabel="SerialPortBaudRatePopUpButton">
+                    <rect key="frame" x="271" y="228" width="115" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="pRl-88-RFN"/>
+                        <constraint firstAttribute="height" constant="21" id="zgb-gs-Sde"/>
+                    </constraints>
+                    <popUpButtonCell key="cell" type="push" title="Baud Rate" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="QBT-hg-pne" id="7eY-R6-aLO">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" id="tNR-er-YDi">
+                            <items>
+                                <menuItem title="Baud Rate" state="on" id="QBT-hg-pne"/>
+                                <menuItem title="Item 2" id="6ch-TH-M4i"/>
+                                <menuItem title="Item 3" id="dw3-2G-MdP"/>
+                            </items>
+                        </menu>
+                        <connections>
+                            <binding destination="-2" name="contentValues" keyPath="self.portManager.availableBaudRates" id="T46-TX-zAi"/>
+                        </connections>
+                    </popUpButtonCell>
+                    <connections>
+                        <binding destination="-2" name="selectedObject" keyPath="selectedSerialPort.baudRate" previousBinding="gqL-h6-OWz" id="6iy-rX-Xdc"/>
+                        <binding destination="-2" name="contentValues" keyPath="self.portManager.availableBaudRates" id="gqL-h6-OWz"/>
+                    </connections>
+                </popUpButton>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mC7-VS-gmI" userLabel="OpenPortButton">
+                    <rect key="frame" x="385" y="224" width="81" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="b6c-Ak-sBw"/>
+                        <constraint firstAttribute="width" constant="69" id="bjx-DI-cCx"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Open" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P7n-Wb-OT3">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openOrClosePort:" target="-2" id="U97-IF-ANf"/>
+                        <binding destination="-2" name="enabled" keyPath="self.selectedSerialPort" id="vkI-ng-Ex9">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNotNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bJG-mN-cJb" userLabel="SendDataButton">
+                    <rect key="frame" x="385" y="191" width="81" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2gY-Ae-zP9"/>
+                        <constraint firstAttribute="width" constant="69" id="xq2-BD-jjt"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Send" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eXq-Gf-C7i">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="sendStringAction:" target="-2" id="qul-NI-AKQ"/>
+                        <binding destination="-2" name="enabled" keyPath="self.selectedSerialPort" id="hgB-wj-qlx">
+                            <dictionary key="options">
+                                <string key="NSValueTransformerName">NSIsNotNil</string>
+                            </dictionary>
+                        </binding>
+                    </connections>
+                </button>
+                <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFO-5L-poh">
+                    <rect key="frame" x="20" y="42" width="440" height="147"/>
+                    <clipView key="contentView" id="KhM-nN-CWJ">
+                        <rect key="frame" x="1" y="1" width="438" height="145"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="rSb-gV-kLd" userLabel="inputTextView">
+                                <rect key="frame" x="0.0" y="0.0" width="438" height="145"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="minSize" width="438" height="145"/>
+                                <size key="maxSize" width="463" height="10000000"/>
+                                <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <size key="minSize" width="438" height="145"/>
+                                <size key="maxSize" width="463" height="10000000"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="L4r-kE-LLj">
+                        <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Jeg-8N-vgw">
+                        <rect key="frame" x="423" y="1" width="16" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="Xhk-ke-PWR" userLabel="AutoscrollCheck">
+                    <rect key="frame" x="18" y="18" width="444" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="F7n-CZ-p4A"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="Autoscroll" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="eSa-PU-yWi">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9pg-gc-jiB" userLabel="inputText Field">
+                    <rect key="frame" x="20" y="197" width="363" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="k0Y-8G-L0m"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="oBk-qB-qz2">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bJG-mN-cJb" secondAttribute="trailing" constant="20" id="7Bv-Gl-MHK"/>
+                <constraint firstItem="sjQ-j1-Cyi" firstAttribute="leading" secondItem="X1M-pM-pRL" secondAttribute="trailing" constant="8" id="8UN-2o-pWC"/>
+                <constraint firstItem="bJG-mN-cJb" firstAttribute="leading" secondItem="9pg-gc-jiB" secondAttribute="trailing" constant="8" id="9TD-bf-r3t"/>
+                <constraint firstItem="mC7-VS-gmI" firstAttribute="leading" secondItem="sjQ-j1-Cyi" secondAttribute="trailing" constant="8" id="AAV-jD-JzW"/>
+                <constraint firstItem="bJG-mN-cJb" firstAttribute="top" secondItem="mC7-VS-gmI" secondAttribute="bottom" constant="12" id="B2W-iQ-Hei"/>
+                <constraint firstItem="uFO-5L-poh" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="BCm-45-hSr"/>
+                <constraint firstItem="sjQ-j1-Cyi" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="H4A-Aj-mA2"/>
+                <constraint firstItem="Xhk-ke-PWR" firstAttribute="top" secondItem="uFO-5L-poh" secondAttribute="bottom" constant="8" id="IBX-Yp-Fhc"/>
+                <constraint firstAttribute="bottom" secondItem="Xhk-ke-PWR" secondAttribute="bottom" constant="20" id="QAq-P8-yN0"/>
+                <constraint firstItem="Xhk-ke-PWR" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="QHw-Bo-ERv"/>
+                <constraint firstItem="X1M-pM-pRL" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="akn-Nu-L2j"/>
+                <constraint firstAttribute="trailing" secondItem="uFO-5L-poh" secondAttribute="trailing" constant="20" id="alA-Mk-Imp"/>
+                <constraint firstItem="X1M-pM-pRL" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="cNH-aa-B1c"/>
+                <constraint firstItem="uFO-5L-poh" firstAttribute="top" secondItem="9pg-gc-jiB" secondAttribute="bottom" constant="8" id="dSN-zi-156"/>
+                <constraint firstItem="9pg-gc-jiB" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="hI5-SZ-WMN"/>
+                <constraint firstItem="mC7-VS-gmI" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="mLw-8p-Cyo"/>
+                <constraint firstItem="9pg-gc-jiB" firstAttribute="top" secondItem="sjQ-j1-Cyi" secondAttribute="bottom" constant="12" id="mXg-Zb-Cny"/>
+                <constraint firstAttribute="trailing" secondItem="mC7-VS-gmI" secondAttribute="trailing" constant="20" id="mb2-ab-SM7"/>
+                <constraint firstAttribute="trailing" secondItem="Xhk-ke-PWR" secondAttribute="trailing" constant="20" id="mzC-Wc-wiW"/>
+                <constraint firstItem="sjQ-j1-Cyi" firstAttribute="leading" secondItem="X1M-pM-pRL" secondAttribute="trailing" constant="8" id="qlo-qq-sCT"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>
